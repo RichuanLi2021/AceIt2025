@@ -15,7 +15,22 @@
 }
 
 body {
-  color: var(--foreground);
+  /* color: var(--foreground); 
+        */
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* About set global color with color: var(--foreground); in body section.
+
+* This sets the default text color for the entire page, 
+    applying to all text unless explicitly overriden
+
+    This means:
+	•	Any text inside the body will inherit the --foreground color 
+    (e.g., #171717 in light mode or #ededed in dark mode).
+	•	Text styling (text-black, text-gray-400, etc.) applied using classes 
+    might not work as expected because color from body has higher specificity 
+    (it is applied globally to all text by default).
+*/

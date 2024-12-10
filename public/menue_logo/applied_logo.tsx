@@ -3,7 +3,13 @@ import * as React from "react";
 
 function IconWorkAlt(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em" {...props}>
+    <svg 
+      fill="none" 
+      viewBox="0 0 24 24" 
+      height="2em" 
+      width="2em" 
+      {...props}
+      >
       <path
         fill="currentColor"
         fillRule="evenodd"

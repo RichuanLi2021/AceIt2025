@@ -6,8 +6,8 @@ function IconSettingsOutline(props: React.SVGProps<SVGSVGElement>) {
     <svg
       viewBox="0 0 512 512"
       fill="currentColor"
-      height="1em"
-      width="1em"
+      height="2em"
+      width="2em"
       {...props}
     >
       <path

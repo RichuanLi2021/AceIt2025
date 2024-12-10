@@ -22,7 +22,7 @@ interface Side_bar_data_type {
 export const Side_bar_data: Side_bar_data_type[] =[
     {
         id: 1,
-        title: "Side_bar",
+        title: "Menue",
         items: [
             {
                 icon: <IconCreateDashboard/>, //since icon is returned as a JSX Element, which is a React node/element
@@ -49,7 +49,7 @@ export const Side_bar_data: Side_bar_data_type[] =[
 
     {
         id: 2,
-        title: "others",
+        title: "Account",
         items: [
             {
                 icon: <IconProfile/>,

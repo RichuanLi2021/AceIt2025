@@ -36,19 +36,23 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 ## tsconfig.json
-* About paths
-1. '@' is an Alias, it is explicitly defined in the "paths" configuration.
-2. ["baseUrl": "./"]: this means the default or base url is set to the root level of the project.
-3. "@/components/*": ["components/*"]: this means any import starting with @/components will look inside the components folder at the root level of the project.
-4. "@/*": ["src/*"]: this means any import starting with @/ will look inside the src folder
-
+About paths
+* '@' is an Alias, it is explicitly defined in the "paths" configuration.
+* ["baseUrl": "./"]: this means the default or base url is set to the root level of the project.
+* "@/components/*": ["components/*"]: this means any import starting with @/components will look inside the components folder at the root level of the project.
+* "@/*": ["src/*"]: this means any import starting with @/ will look inside the src folder
 
 ## to start
 (https://www.youtube.com/watch?v=myYlGLFxZas)
-
 
 ## Styling and icon
 [Tailwind](https://tailwindcss.com/docs/responsive-design)
 [heroicons](https://heroicons.com/outline)
 [ReactSVGIcon](https://reactsvgicons.com)
-[Tabler_Icons](https://tablericons.com)
+[Tabler_Icons](https://tablericons.com/)
+
+## Tailwind
+Read the Tailwind utility docs.
+[Tailwind](https://tailwindcss.com/docs/utility-first)
+[Tailwind_cheat_sheet](https://nerdcave.com/tailwind-cheat-sheet)
+

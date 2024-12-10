@@ -1,6 +1,6 @@
 const Dashboard_Layout = () => {
   return (
-    <div > this is dashboard</div>
+    <div> yes </div>
   )
 }
 

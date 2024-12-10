@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Menue_dashboard from "@/components/ui/Menue/menue";
+import Navbar from "@/components/ui/Navbar/navbar";
 
 export default function Dashboard_Layout({
     children
@@ -20,21 +21,34 @@ export default function Dashboard_Layout({
         // md:w stands for width on medium screen; lg:w stands for width for large screen, ... 
         <div className="h-screen flex">
             {/* Left */}
-            <div className="w-[18%] sm:w[8%] md:w[12%] lg:w-[16%] xl:w-[14%] bg-red-200 p-4"> 
-                <Link 
-                    href="./"
-                    className="flex items-center justify-center lg:justify-start gap-2 w-10 sm:w-5 mb-5"
-                >
-                    <Image src="/aceit_logo.png" alt="logo" width={20} height={20}/>
-                    <span className="hidden lg:block">AceIt</span>
-                </Link>
-                <div className="m-2">
+            <div className="w-[12%] phone_sm:w-[10%] phone_rs:w-[14%] tablet:w-[16%] laptop:w-[18%] monitor:w-[18%] bg-red-200">
+                {/* Aceit Logo */} 
+                <div className="flex items-center justify-center laptop:justify-start laptop:p-2">
+                    <Link 
+                        href="./" 
+                        className="flex p-2">
+                        <Image
+                            src="/aceit_logo.png" 
+                            alt="logo" 
+                            width={40} 
+                            height={40}
+                        />
+                    </Link>
+                    <strong>
+                    <span className="hidden laptop:block tablet:block px-1">AceIt</span>
+                    </strong>
+
+                </div>
+                
+                {/* Menur Dashboard */}
+                <div className="flex flex-col items-center justify-center mt-6">
                     <Menue_dashboard/>
                 </div>
             </div>
-
             {/* Right */}
-            <div className="w-[82%] sm:w[92%] md:w-[88%] lg:w-[84%] xl:w-[86%] bg-blue-200"> 
+            <div className="w-[88%] phone_sm:w-[90%] phone_rs:w-[86%] tablet:w-[84%] 
+                            laptop:w-[82%] monitor:w-[82%] bg-blue-200 overflow-auto">
+                <Navbar/> 
                 {children}  
             </div>   
         </div>

@@ -10,8 +10,8 @@ function IconPresentationAnalytics(props: React.SVGProps<SVGSVGElement>) {
       strokeLinejoin="round"
       strokeWidth={2}
       viewBox="0 0 24 24"
-      height="1em"
-      width="1em"
+      height="2em"
+      width="2em"
       {...props}
     >
       <path stroke="none" d="M0 0h24v24H0z" />

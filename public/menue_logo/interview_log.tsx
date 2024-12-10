@@ -6,8 +6,8 @@ function IconPersonWorkspace(props: React.SVGProps<SVGSVGElement>) {
     <svg
       fill="currentColor"
       viewBox="0 0 16 16"
-      height="1em"
-      width="1em"
+      height="1.5em"
+      width="2em"
       {...props}
     >
       <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4zm4-5.95a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
